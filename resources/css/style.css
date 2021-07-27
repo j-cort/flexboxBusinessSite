@@ -1,0 +1,146 @@
+/* Universal Styles */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@0;1&family=Quicksand:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif; sans-serif;
+  background-color: rgba(3, 51, 37, 0.692);
+  color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Navbar */
+#hero {
+  background: url('https://source.unsplash.com/1600x900/?land, africa') no-repeat center center/cover;
+  height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  background: #222;
+  text-align: center;
+  width: 100vw;
+  position: fixed;
+  opacity: 1;
+  padding: 20px 0;
+}
+
+.nav-container .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  justify-content: space-between;
+  width: 410px;
+}
+
+.nav-container .logo h1 {
+  font-size: 40px;
+  letter-spacing: 2px; 
+}
+
+.nav-container .logo p {
+  margin: 0;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-container .nav-links ul {
+  display: flex;
+}
+
+.nav-container .nav-links ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.nav-container .nav-links ul li a {
+  padding: 25px;
+}
+
+.nav-container .nav-links ul li a:hover {
+  border-bottom: 1px solid #9ab973;
+}
+
+@media(max-width: 1000px) {
+  #navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #222;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-container .logo {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 410px;    
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+  }
+
+  .nav-container .nav-links ul {
+    display: flex;
+  }
+
+  .nav-container .nav-links ul li {
+    list-style: none;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .nav-container .nav-links ul li a {
+    padding: 15px;
+  }
+
+}
