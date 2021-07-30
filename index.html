@@ -10,7 +10,7 @@
   <title>Azure Real Estate | Welcome</title>
 </head>
 <body id="home">
-  <!-- Here & Navbar -->
+  <!-- Hero & Navbar -->
   <header>
     <div id="hero">
       <nav id="navbar">
@@ -29,7 +29,8 @@
           </div>
         </div>
       </nav>
-      <section class="slogan">
+      <!-- Slogan (ugly, so commented out) -->
+      <!-- <section class="slogan">
         <div class="slogan-container">
           <div class="slogan-content">
             <h1>Home Sweet Home</h1>
@@ -37,40 +38,41 @@
             <a href="#about"><i class="fas fa-angle-double-down blink"></i></a>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
   </header>
-  <!-- About: Icons -->
+
   <main>
-    <div class="intro">
-      <h1>Service Overview</h1>
-      <h3>360&#176; Professional Real Estate Services</h3>
-    </div>
+  <!-- About: Icons -->
     <section id="about">
-      <div class="about-icons">
-        <div class="about-icon land">
+      <div class="intro">
+        <h1>Service Overview</h1>
+        <h3>360&#176; Professional Real Estate Services</h3>
+      </div>    
+      <div class="frames">
+        <div class="frame">
           <i class="fas fa-landmark fa-6x text-primary"></i>
           <h3>Land Sale & Procurement</h3>
         </div>
-        <div class="about-icon design">
+        <div class="frame">
           <i class="fas fa-home fa-6x text-primary"></i>
           <h3>Design & Construction</h3>
         </div>
-        <div class="about-icon legal">
+        <div class="frame">
           <i class="fas fa-balance-scale fa-6x text-primary"></i>
           <h3>Legal & Compliance</h3>
         </div>
-        <div class="about-icon utilities">
+        <div class="frame">
           <i class="fas fa-hand-holding-water fa-6x text-primary"></i>
           <h3>Utilities & Infrastructure</h3>
         </div>
       </div>
       <!-- About: Solutions -->
-      <div class="about-solutions">
-        <div class="about-showcase">
+      <div class="dual-panel">
+        <div class="visual-panel">
           <img src="https://source.unsplash.com/weekly?construction" alt="">
         </div>
-        <div class="about-blurb">
+        <div class="text-panel">
           <h3>About Us</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam asperiores accusamus, magnam dolores consectetur maiores ex repellendus reiciendis magni fugiat minus culpa consequuntur. Soluta sint dicta accusamus. Mollitia, nostrum.</p>
           <a href="#" class="btn">Read More</a>
@@ -81,50 +83,144 @@
     <section id="sites">
       <div class="intro">
         <h1>Featured Sites</h1>
-        <h3>Buy Land & Build Your Dream Home in The Heart of Nature</h3>
+        <h3>Buy Land & Build Your Dream Home In The Heart Of Nature</h3>
       </div>
-      <div class="sites-grid row">
-        <div class="sites-grid column">
-          <div class="site site-1">            
+      <div class="row">
+        <div class="column">
+          <div class="segment site-1">            
               <h1>Beach Town</h1>                      
           </div>
-          <div class="site site-2">
+          <div class="segment site-2">
             <h1>Riverside Cove</h1>
           </div>
         </div>
-        <div class="sites-grid column">
-          <div class="site site-3">
+        <div class="column">
+          <div class="segment site-3">
             <h1>Ocean Villas</h1>
           </div>
-          <div class="site site-4">
-            <h1>Tropic Farmhouse</h1>
+          <div class="segment site-4">
+            <h1>Island Farmhouse</h1>
           </div>
         </div>
-        <div class="sites-grid column">
-          <div class="site site-5">
+        <div class="column">
+          <div class="segment site-5">
             <h1>Forest Lodge</h1>
           </div>
-          <div class="site site-6">
+          <div class="segment site-6">
             <h1>Prairie Cottages</h1>
           </div>
         </div>
       </div>
     </section>
     <!-- Team -->
-    <section class="team">
-
-    </section>
-    <section class="contact">
-
+    <section id="team">
+      <div class="intro">
+        <h1>Our Team</h1>
+        <h3>We'll Take You From Initial Planning To Successful Project Completion</h3>
+      </div>
+      <div class="frames">
+        <div class="frame">
+          <img class="window" src="https://source.unsplash.com/weekly?business woman" alt="">
+          <h3>Jane Smith</h3>
+          <p>Founder</p>
+        </div>
+        <div class="frame">
+          <img class="window" src="https://source.unsplash.com/weekly?worker" alt="">
+          <h3>John Doe</h3>
+          <p>Lead Architect & Surveyor</p>
+        </div>
+        <div class="frame">
+          <img class="window" src="https://source.unsplash.com/weekly?business man" alt="">
+          <h3>Justin Tan</h3>
+          <p>Planning & Administration</p>
+        </div>
+        <div class="frame">
+          <img class="window" src="https://source.unsplash.com/weekly?office worker" alt="">
+          <h3>Penelope Goldman</h3>
+          <p>Planning & Administration</p>
+        </div>
+      </div>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="dual-panel reverse">
+        <div class="visual-panel">
+          <img src="https://source.unsplash.com/weekly?email" alt="">
+        </div>
+        <div class="text-panel">
+          <h3>Contact Us</h3>
+          <form action="" class="contact-form">
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone"></label>
+              <input type="text" id="phone" name="phone" placeholder="Enter Phone">
+            </div>
+            <div class="form-group">
+              <label for="message"></label>
+              <textarea name="message" id="message" cols="52" rows="10" placeholder="Type your message here."></textarea>
+            </div>
+              <input type="submit" id="submit" value="Send" class="btn">
+          </form>
+        </div>        
+      </div>
     </section>
   </main>    
-  
-    
-  
- 
-  <footer>
-
+  <!-- Footer -->  
+  <footer id="footer" class="bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-4x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-4x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-4x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-4x"></i></a>
+    </div>
+    <p class="copyright">Copyright &copy; 2021 - EdgeLedger</p>
   </footer>
   
+  <!-- Javascript -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    // Smooth Scrolling
+    const mediaWidth = window.matchMedia("(max-width: 768px)")
+
+    if (mediaWidth.matches) {
+      $('#navbar a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+  
+          const hash = this.hash;
+  
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 160
+            },
+            800
+          );
+        }
+      });
+    } else {
+      $('#navbar a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+  
+          const hash = this.hash;
+  
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 87
+            },
+            800
+          );
+        }
+      });
+    }
+  </script>
 </body>
 </html>

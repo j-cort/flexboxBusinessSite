@@ -1,15 +1,8 @@
-.bold {
-  font-weight: bold;
-}
-
-.subheading {
-  font-family: 'Philosopher', sans-serif;
-}
+/* General Styles */
 
 .heading {
   font-family: 'Quicksand', sans-serif;
   }
-
 
 .text-primary {
   color: #9ab973;
@@ -20,32 +13,50 @@
   color: #fff;
 }
 
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
+.window {
+  border-radius: 50%;
 }
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Forms & Buttons */
 
 .btn {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 30px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 800px;
-  padding: 20px 5px;
+.btn:hover {
+  border: 1px solid #333;
+  color: #333;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding: 0 5px;
+.form-group input, .form-group textarea {
+  border-radius: 5px;
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  background: #eee;
 }
+
+.form-group textarea {
+  width: 50%;
+  height: 300px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline-color: #333;
+}
+
+/* Section Intro */
 
 .intro {
   padding: 50px;
@@ -63,3 +74,127 @@
 .intro h3 {
   font-size: 30px;
 }
+
+/* Flex Grid Section */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 800px;
+  padding: 20px 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+}
+
+.column a {
+  display: block;
+}
+
+.segment {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50%;
+}
+
+.segment h1 {  
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+
+.segment > * {
+  z-index: 10;
+}
+
+.segment h1::before {
+  content: "";
+  display: block;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: -1; /* why did i need a negative value for this to work?? */
+}
+
+/* Frames Section */
+
+.frames {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.frame {
+  padding: 30px 20px;
+}
+
+.frame i {
+  margin-bottom: 20px;
+}
+
+.frame img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.frame h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Dual Panel Section */
+
+.dual-panel {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  align-content: center;
+}
+
+.visual-panel {
+  width: 50%;
+}
+
+.visual-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-panel {
+  width: 50%;
+  background: #9ab973;
+  padding: 30px;
+}
+
+.text-panel h3 {
+ font-size: 40px;
+ margin-bottom: 20px;
+}
+
+.text-panel p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.text-panel a {
+  margin-bottom: 40px;
+}
+
+
+
